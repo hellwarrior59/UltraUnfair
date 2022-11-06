@@ -546,6 +546,7 @@ local QuestSelect = PageFarm.AddDropdown("Quest Select", {
     "Kingdom",
     "Rigged Game",
     "Trouble in the backrooms"
+    "Something is in the sewers"
     }, function(value)
         FarmSettings.SelectedQuest = value
         Save("FarmSettings", FarmSettings)
