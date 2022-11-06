@@ -264,7 +264,7 @@ local function GetQuestMobs(quest)
     elseif quest == "Kingdom" then 
         EnemyType = {"Blyke", "Isen", "Remi", "Zeke"}
     elseif quest == "Something is in the sewers" then 
-        EnemyType = {""}
+        EnemyType = {"Cultist"}
     elseif quest == "Trouble in the backrooms" then 
         EnemyType = {"Seer", "John", "Seraphina"}
     end
