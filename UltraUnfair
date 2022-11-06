@@ -258,7 +258,7 @@ end
 
 local function GetQuestMobs(quest)
     if quest == "Something is in the sewers" then 
-        EnemyType = {"Cultist"}
+        EnemyType = {""}
     elseif quest == "Gaming Disorder" then 
         EnemyType = {"Crail"}
     elseif quest == "Kingdom" then 
@@ -521,21 +521,6 @@ local SliderFarmDistance = PageFarm.AddSlider("Farm Distance", {Min = 0, Max = 1
     Save("FarmSettings", FarmSettings)
 end)
 
-local SliderAuraDistance = PageFarm.AddSlider("Farm Aura Distance", {Min = 0, Max = 20, Def = FarmSettings.AuraDistance}, function(value)
-    FarmSettings.AuraDistance = value
-    Save("FarmSettings", FarmSettings)
-end)
-
-local KillToggle = PageFarm.AddToggle("Kill Players while Farming (Uses Kill Aura Distance)", FarmSettings.KillPlayers, function(value)
-    FarmSettings.KillPlayers = value
-    Save("FarmSettings", FarmSettings)
-end)
-
-local BossToggle = PageFarm.AddToggle("Auto Boss Kill", false, function(value)
-    Toggles.FarmBoss = value
-    if value then
-        BossFarm()
-    end
 end)
 
 local QuestSelect = PageFarm.AddDropdown("Quest Select", {
@@ -550,27 +535,10 @@ local QuestSelect = PageFarm.AddDropdown("Quest Select", {
 end, FarmSettings.SelectedQuest)
 
 
-
-local PageKillAura = MainUI.AddPage("Kill Aura", false)
-
-local KillAuraToggle = PageKillAura.AddToggle("Kill Aura", false, function(value)
-    Toggles.KillAura = value
-
-end)
-
 local MobAuraToggle = PageKillAura.AddToggle("Only Mob Kill Aura (Overrides Kill Aura)", false, function(value)
     Toggles.MobAura = value
 end)
 
-local SliderKillDistance = PageKillAura.AddSlider("Kill Aura Distance", {Min = 0, Max = 16, Def = AuraSettings.KillDistance}, function(value)
-    AuraSettings.KillDistance = value
-    Save("AuraSettings", AuraSettings)
-end)
-
-local SliderPunchSpeed = PageKillAura.AddSlider("Hit Speed (ms)", {Min = 15, Max = 3000, Def = AuraSettings.PunchSpeed * 1000}, function(value)
-    AuraSettings.PunchSpeed = value/1000
-    Save("AuraSettings", AuraSettings)
-end)
 
 -- local Label1 = PageKillAura.AddLabel("Choose Aura Mode")
 
