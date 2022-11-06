@@ -1,18 +1,18 @@
 getgenv().Get = setmetatable({}, {__index = function(Self, Idx) return game:GetService(Idx) end})
 
 getgenv().Toggles = {
-    Farm = false,
-    KillAura = false,
-    MobAura = false,
-    AutoRoll = false,
+    Farm = true,
+    KillAura = true,
+    MobAura = true,
+    AutoRoll = true,
     Store = false,
-    FarmBoss = false,
-    BreakBarrier = false
+    FarmBoss = true,
+    BreakBarrier = true
 }
 
 getgenv().FarmSettings = {
-    AuraDistance = 6,
-    FarmDistance = 3,
+    AuraDistance = 20,
+    FarmDistance = 12,
     KillPlayers = true,
     SelectedQuest = nil
 }
