@@ -257,8 +257,8 @@ end
 
 
 local function GetQuestMobs(quest)
-    if quest == "Real Amgogus" then 
-        EnemyType = {"Cripple"}
+    if quest == "Something is in the sewers" then 
+        EnemyType = {"Cultist"}
     elseif quest == "Gaming Disorder" then 
         EnemyType = {"Crail"}
     elseif quest == "Kingdom" then 
@@ -267,8 +267,6 @@ local function GetQuestMobs(quest)
         EnemyType = {"Arlo", "John", "Seraphina"}
     elseif quest == "Trouble in the backrooms" then 
         EnemyType = {"Seer", "John", "Seraphina"}
-    elseif quest == "Something is in the sewers" then 
-        EnemyType = {"Cultist"}
     end
     return(EnemyType)
 end
@@ -541,12 +539,11 @@ local BossToggle = PageFarm.AddToggle("Auto Boss Kill", false, function(value)
 end)
 
 local QuestSelect = PageFarm.AddDropdown("Quest Select", {
-    "Real Amgogus",
+    "Something is in the sewers",
     "Gaming Disorder",
     "Kingdom",
     "Rigged Game",
     "Trouble in the backrooms"
-    "Something is in the sewers"
     }, function(value)
         FarmSettings.SelectedQuest = value
         Save("FarmSettings", FarmSettings)
