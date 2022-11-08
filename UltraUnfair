@@ -691,7 +691,7 @@ local PageMisc = MainUI.AddPage("Misc", false)
 local HideName = PageMisc.AddButton("Hide Identity (Continuous)", function()
 	spawn(function()
 		while true do
-    		ChangeName(OWNER)
+    		HideName()
     		wait(1)
     	end
 	end)
