@@ -508,7 +508,7 @@ Farm()
 
 local UILibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/TheOnlineCat/Codes/main/Twink's%20UILib%20Modified", true))()
 
-local MainUI = UILibrary.Load("Much Ultra, Very Fair")
+local MainUI = UILibrary.Load("OWNERS ARE FAGGOTS")
 
 local PageFarm = MainUI.AddPage("Farm", false)
     
