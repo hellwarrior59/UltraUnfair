@@ -640,7 +640,7 @@ end)
 
 local LabelRoll = PageRoll.AddLabel("Equipment Roll")
 
-local RollFist = PageRoll.AddButton("Roll Fist GOT 8.5+ close the game!!!  2+ BAN", function()
+local RollFist = PageRoll.AddButton("Roll Fist", function()
     for i = 1, RollSettings.Amount do
         local args = {
             [1] = "Fist"
@@ -650,7 +650,7 @@ local RollFist = PageRoll.AddButton("Roll Fist GOT 8.5+ close the game!!!  2+ BA
     end
 end)
 
-local RollStyle = PageRoll.AddButton("Roll Style", function()
+local RollStyle = PageRoll.AddButton("Roll Style GOT 8.5+ close the game!!!  2+ BAN", function()
     for i = 1, RollSettings.Amount do
         local args = {
             [1] = "Relic"
@@ -688,7 +688,7 @@ end
 
 local PageMisc = MainUI.AddPage("Misc", false)
 
-local HideName = PageMisc.AddButton("Hide Identity (Continuous)", function()
+local HideName = PageMisc.AddButton("Hide Identity (OWNER)", function()
 	spawn(function()
 		while true do
     		HideName()
