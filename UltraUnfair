@@ -236,12 +236,12 @@ end
 
 
 local function Hit(Enemy)
-    if AuraSettings.Mode == "Punch (Lowest 150ms)" then
+    if AuraSettings.Mode == "DONT USE = BAN" then
         Punch(Enemy)
-    elseif AuraSettings.Mode == "Dark Blade (Arbiter Only)" then
+    elseif AuraSettings.Mode == "Dark Blade (Arbiter Only) BEST!!!" then
         ArbiterHit(Enemy)
         wait(AuraSettings.PunchSpeed)
-    elseif AuraSettings.Mode == "Energy Blade" then
+    elseif AuraSettings.Mode == "Energy Blade (Short range)" then
         EnergyBlade(Enemy)
         wait(AuraSettings.PunchSpeed)
     end
