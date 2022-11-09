@@ -236,12 +236,12 @@ end
 
 
 local function Hit(Enemy)
-    if AuraSettings.Mode == "DONT USE = BAN" then
+    if AuraSettings.Mode == "Punch (Lowest 150ms)" then
         Punch(Enemy)
-    elseif AuraSettings.Mode == "Dark Blade (Arbiter Only) BEST!!!" then
+    elseif AuraSettings.Mode == "Dark Blade (Arbiter Only)" then
         ArbiterHit(Enemy)
         wait(AuraSettings.PunchSpeed)
-    elseif AuraSettings.Mode == "Energy Blade (Short range)" then
+    elseif AuraSettings.Mode == "Energy Blade" then
         EnergyBlade(Enemy)
         wait(AuraSettings.PunchSpeed)
     end
@@ -576,9 +576,9 @@ end)
 
 local AuraMode = PageKillAura.AddDropdown("Aura Hit Mode",
     {   
-    "DONT USE = BAN",
-    "Dark Blade (Arbiter Only) BEST!!!",
-    "Energy Blade (Short range)"
+    "DNT USE = BAN",
+    "Dark Blade (Arbiter Only)",
+    "Energy Blade"
     }, function(value)
         AuraSettings.Mode = value
         Save("AuraSettings", AuraSettings)
