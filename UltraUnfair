@@ -508,7 +508,7 @@ Farm()
 
 local UILibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/TheOnlineCat/Codes/main/Twink's%20UILib%20Modified", true))()
 
-local MainUI = UILibrary.Load("OWNERS ARE FAGGOTS")
+local MainUI = UILibrary.Load("OWNER SAO#0059")
 
 local PageFarm = MainUI.AddPage("Farm", false)
     
@@ -576,9 +576,9 @@ end)
 
 local AuraMode = PageKillAura.AddDropdown("Aura Hit Mode",
     {   
-    "Punch (Lowest 150ms)",
-    "Dark Blade (Arbiter Only)",
-    "Energy Blade"
+    "DONT USE = BAN",
+    "Dark Blade (Arbiter Only) BEST!!!",
+    "Energy Blade (Short range)"
     }, function(value)
         AuraSettings.Mode = value
         Save("AuraSettings", AuraSettings)
